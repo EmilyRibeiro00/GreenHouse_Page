@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title> Flor & Folha — Plantas</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ====================== HEADER ====================== -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">Flor & Folha 🌿 </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#cuidados">Cuidados</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====================== HERO ====================== -->
+  <main id="inicio">
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hero-tag">Ecommerce • Plantas</p>
+        <h1>Traga a natureza para<br>perto de você</h1>
+        <p class="hero-sub">
+          Transforme sua casa em um refúgio verde com plantas selecionadas,
+          fáceis de cuidar e entregues até você.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#produtos" class="btn btn-primary">Ver Produtos</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-arch">
+          <img src="img/hero_plant.png" alt="Planta hero" class="hero-img">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ====================== FEATURES ====================== -->
+    <section class="features">
+      <div class="feature-item">
+        <span class="feature-icon">🚚</span>
+        <div>
+          <h3>Frete Rápido</h3>
+          <p>Envio cuidadoso para todo o Brasil.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <span class="feature-icon">💳</span>
+        <div>
+          <h3>Pagamento Fácil</h3>
+          <p>Pix e cartão em até 3x.</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <span class="feature-icon">🌱</span>
+        <div>
+          <h3>Suporte Especializado</h3>
+          <p>Ajuda para cuidar das suas plantas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== PRODUTOS + FILTROS ====================== -->
+  
+    <section id="produtos" class="produtos">
+
+      <!-- Título da seção -->
+      <div class="section-header">
+        <h2>Nossos Produtos</h2>
+        <p>Escolha as plantas ideais para o seu espaço.</p>
+      </div>
+
+      <!-- Filtros -->
+      <div class="store-filters">
+
+        <!-- Controles de filtro -->
+        <div class="store-controls">
+
+          <input
+            type="text"
+            id="filtroNome"
+            placeholder="Buscar por nome..."
+          >
+
+          <select id="filtroTipo">
+            <option value="">Tipo</option>
+            <option value="interior">Interior</option>
+            <option value="exterior">Exterior</option>
+            <option value="suculenta">Suculenta</option>
+          </select>
+
+          <select id="filtroTamanho">
+            <option value="">Tamanho</option>
+            <option value="P">P</option>
+            <option value="M">M</option>
+            <option value="G">G</option>
+          </select>
+
+          <select id="ordenar">
+            <option value="">Ordenar</option>
+            <option value="precoMenor">Preço: menor → maior</option>
+            <option value="precoMaior">Preço: maior → menor</option>
+            <option value="facilidade">Facilidade de cuidado</option>
+          </select>
+
+          <button id="limpar" type="button" class="btn btn-ghost">
+            Limpar
+          </button>
+
+        </div> 
+
+      </div> 
+
+      <!-- Lista dinâmica de produtos -->
+      <div id="lista-plantas" class="produtos-grid">
+      </div> 
+
+    </section>
+
+    <!-- ====================== BANNER ====================== -->
+    <section class="banner-meio">
+      <div class="banner-inner">
+        
+        <div class="banner-content">
+          <h2>Crie plantas, <br>melhore de vida</h2>
+          <p>
+            Cuidar de plantas é cuidar de você. Comece hoje a montar o seu
+            cantinho verde.
+          </p>
+          <a href="#produtos" class="btn btn-primary">Começar Agora</a>
+        </div>
+
+        <div class="banner-img-wrapper">
+          <img src="img/banner.jpg" alt="Planta Banner" class="banner-img">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================== STEPS ====================== -->
+    <section id="cuidados" class="steps">
+      <div class="section-header">
+        <h2>Passos para começar a cuidar das suas plantas</h2>
+        <p>Veja o que é essencial para suas plantas crescerem fortes e saudáveis.</p>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card">
+          <img src="img/icon-umidade.png" alt="Ícone controle de umidade" class="step-icon">
+          <h3>Controle de Umidade</h3>
+          <p>Mantenha o nível de umidade ideal para cada espécie de planta.</p>
+        </article>
+
+        <article class="step-card">
+          <img src="img/icon-pragas.png" alt="Ícone prevenção de pragas" class="step-icon">
+          <h3>Prevenção de Pragas</h3>
+          <p>Identifique sinais de pragas cedo e trate rapidamente.</p>
+        </article>
+
+        <article class="step-card">
+          <img src="img/icon-poda.png" alt="Ícone poda e limpeza" class="step-icon">
+          <h3>Poda e Limpeza</h3>
+          <p>Faça podas regulares e remova folhas secas para estimular o crescimento.</p>
+        </article>
+      </div>
+
+    </section>
+
+    <!-- ====================== NEWSLETTER / CONTATO ====================== -->
+    <section id="contato" class="newsletter">
+      <div class="newsletter-inner">
+
+        <!-- BLOCO ESQUERDO — FORMULÁRIO -->
+        <div class="newsletter-form-area">
+          <h2>Receba novidades e ofertas exclusivas</h2>
+          <p>Cadastre seu e-mail para ficar por dentro dos melhores conteúdos sobre cuidados com plantas.</p>
+
+          <form class="newsletter-form">
+            <input type="email" placeholder="Seu melhor e-mail" required>
+            <button type="submit" class="btn btn-primary">Quero receber</button>
+          </form>
+        </div>
+
+        <!-- BLOCO DIREITO — CONTATOS -->
+        <div class="contact-box">
+          <h3>Entre em Contato</h3>
+
+          <ul>
+            <li><strong>Email:</strong> atendimento@greenhome.com.br</li>
+            <li><strong>Telefone:</strong> (11) 90000-0000</li>
+            <li><strong>WhatsApp:</strong> (11) 98888-7777</li>
+            <li><strong>Endereço:</strong> Rua das Flores, 120 — São Paulo/SP</li>
+            <li><strong>Horário:</strong> Seg a Sex, 08h às 18h</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer">
+    <p>© 2025 Flor & Folha — Cultive bem-estar 🌱</p>
+  </footer>
+
+
+  <!-- Seu JS de filtros / lista -->
+  <script src="script.js"></script>
+</body>
+</html>

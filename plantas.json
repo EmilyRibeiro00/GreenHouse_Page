@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "nome": "Samambaia",
+      "tipo": "interior",
+      "tamanho": "M",
+      "preco": 45.50,
+      "cuidados": "Regar 2x por semana, evitar sol direto.",
+      "fotoURL": "img/samambaia.jpg",
+      "facilCuidar": true
+    },
+    {
+      "id": 2,
+      "nome": "Cacto",
+      "tipo": "suculenta",
+      "tamanho": "P",
+      "preco": 25.00,
+      "cuidados": "Regar 1x a cada 10 dias, manter ao sol.",
+      "fotoURL": "img/cacto.jpg",
+      "facilCuidar": true
+    },
+    {
+      "id": 3,
+      "nome": "Costela-de-Adão",
+      "tipo": "interior",
+      "tamanho": "G",
+      "preco": 90.00,
+      "cuidados": "Regar 3x por semana, boa iluminação.",
+      "fotoURL": "img/costela.jpg",
+      "facilCuidar": false
+    }
+  ]
+  
